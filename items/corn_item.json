@@ -1,0 +1,26 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ve:corn_item",
+			"category": "Nature"
+		},
+		"components": {
+            "minecraft:use_duration": 32,
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"texture": "corn_item"
+            },
+            "minecraft:creative_category": {
+				"parent": "itemGroup.name.crops"
+			},
+            "minecraft:food": {
+                "nutrition": 1,
+                "saturation_modifier": "normal"
+            },
+			"minecraft:display_name": {
+				"value": "item.ve:corn_item.name"
+			}
+		}
+	}
+}

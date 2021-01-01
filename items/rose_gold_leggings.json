@@ -7,7 +7,7 @@
         },
         "components": {
             "minecraft:armor": {
-				"protection": 4
+				"protection": 2
             },
             "minecraft:wearable": {
 				"slot": "slot.armor.legs"

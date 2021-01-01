@@ -6,53 +6,39 @@
 			"places_feature": "minecraft:copperore_feature_underground"
 		},
 		"conditions": {
+			"placement_pass": "underground_pass",
 			"minecraft:biome_filter": [
-				{
+			  {
+				"any_of": [
+				  {
 					"test": "has_biome_tag",
 					"operator": "==",
-					"value": "forest"
-				},
-				{
+					"value": "overworld"
+				  },
+				  {
 					"test": "has_biome_tag",
 					"operator": "==",
-					"value": "desert"
-				},
-				{
-					"test": "has_biome_tag",
-					"operator": "==",
-					"value": "ocean"
-				}
-			],
-			"placement_pass": "underground_pass"
+					"value": "overworld_generation"
+				  }
+				]
+			  }
+			]
 		},
 		"distribution": {
-			"iterations": 1,
+			"iterations": 20,
 			"coordinate_eval_order": "zyx",
 			"x": {
-				"distribution": "uniform",
-				"extent": [
-					0,
-					16
-				]
+			  "distribution": "uniform",
+			  "extent": [ 0, 16 ]
 			},
 			"y": {
-				"distribution": "uniform",
-				"extent": [
-					0,
-					60
-				]
+			  "distribution": "uniform",
+			  "extent": [ 0, 128 ]
 			},
 			"z": {
-				"distribution": "uniform",
-				"extent": [
-					0,
-					16
-				]
-			},
-			"scatter_chance": {
-				"numerator": 1,
-				"denominator": 4
+			  "distribution": "uniform",
+			  "extent": [ 0, 16 ]
 			}
-		}
+		  }
 	}
 }

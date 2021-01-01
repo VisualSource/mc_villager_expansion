@@ -20,7 +20,7 @@
       "minecraft:weapon": {},
       "tag:minecraft:is_sword": {},
       "minecraft:use_duration": 625,
-      "minecraft:damage": 5.5,
+      "minecraft:damage": 5,
       "minecraft:mining_speed": 1,
       "minecraft:allow_off_hand": true,
       "minecraft:damageable": {},

@@ -21,7 +21,11 @@
       "minecraft:weapon": {},
       "tag:minecraft:is_sword": {},
       "minecraft:use_duration": 625,
-      "minecraft:damage": 4.5,
+      "minecraft:durability":{
+        "damage_chance": 2,
+        "max_durability": 625
+      },
+      "minecraft:damage": 4,
       "minecraft:mining_speed": 1,
       "minecraft:allow_off_hand": true,
       "minecraft:damageable": {},

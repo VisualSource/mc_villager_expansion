@@ -1,0 +1,24 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ve:corn_seeds",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:max_stack_size": 64,
+			"minecraft:icon": {
+				"texture": "corn_seeds"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.seeds"
+			},
+            "minecraft:seed": {
+                "crop_result": "melon_stem"
+            },
+			"minecraft:display_name": {
+				"value": "item.ve:corn_seeds.name"
+			}
+		}
+	}
+}

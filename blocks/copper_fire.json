@@ -6,8 +6,16 @@
 			"register_to_creative_menu": false
 		},
 		"components": {
-			"minecraft:destroy_time": 1,
-			"minecraft:geometry": "geometry.fire"
+			"minecraft:block_light_emission": 1,
+			"minecraft:entity_collision": false,
+			"minecraft:destroy_time": 0,
+			"minecraft:geometry": "geometry.fire",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "copper_fire",
+					"render_method": "alpha_test"
+				}
+			}
 		},
 		"events": {}
 	}

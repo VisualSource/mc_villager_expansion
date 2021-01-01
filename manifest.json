@@ -4,7 +4,7 @@
         "description": "Village Expantion resouce pack",
         "name": "Village Expantion RR",
         "uuid": "594b6410-bd44-46dd-85e7-fa9885b9ee09",
-        "version": [0, 0, 1],
+        "version": [0, 0, 5],
         "min_engine_version": [ 1, 16, 0 ]
     },
     "modules": [
@@ -12,7 +12,7 @@
             "description": "Example vanilla resource pack",
             "type": "resources",
             "uuid": "8158f748-38ff-4f58-b6fe-f4e910d4f40f",
-            "version": [0, 0, 1]
+            "version": [0, 0, 5]
         }
     ]
 }

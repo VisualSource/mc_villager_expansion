@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "ve:copper_sword"
+      },
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "X",
+        "X",
+        "S"
+      ],
+      "key": {
+        "X": {
+          "item": "ve:copper_ingot"
+        },
+        "S":{
+          "item": "minecraft:stick"
+        }
+      },
+      "result": {
+        "item": "ve:copper_sword"
+      }
+    }
+  }

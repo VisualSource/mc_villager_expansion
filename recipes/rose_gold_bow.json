@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "ve:rose_gold_bow"
+      },
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        " XS",
+        "X S",
+        " XS"
+      ],
+      "key": {
+        "X": {
+          "item": "ve:rose_gold_ingot"
+        },
+        "S":{
+          "item": "minecraft:string"
+        }
+      },
+      "result": {
+        "item": "ve:rose_gold_bow"
+      }
+    }
+  }

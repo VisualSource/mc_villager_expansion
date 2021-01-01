@@ -1,0 +1,47 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ve:rose_gold_bow",
+			"category": "equipment"
+    	},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_duration": 3600,
+			"minecraft:frame_count": 3,
+			"minecraft:animates_in_toolbar": true,
+			"minecraft:hand_equipped": true,
+			"minecraft:fuel": {
+				"duration": 10
+			},
+			"minecraft:shooter": {
+				"ammunition": [
+					{
+						"item": "minecraft:arrow",
+						"use_offhand": true,
+						"search_inventory": true,
+						"use_in_creative": true
+					}
+				],
+				"scale_power_by_draw_duration": true,
+				"max_draw_duration": 1
+			},
+			"minecraft:damageable": {
+				"max_damage": 384
+			},
+			"minecraft:display_name": {
+				"value": "item.ve:rose_gold_bow.name"
+			},
+			"minecraft:icon": {
+				"texture": "rose_gold_bow_standby"
+			},
+			"minecraft:projectile": {
+				"projectile_entity": "minecraft:arrow",
+				"minimum_critical_power": 0
+			},
+			"minecraft:use_animation": "bow"
+		},
+		"events":{}
+	}
+     
+}

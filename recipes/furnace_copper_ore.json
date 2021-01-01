@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "ve:furnace_copper_ore"
+    },
+
+    
+    "tags": ["furnace", "blast_furnace"],
+    "input": "ve:copper_ore",
+    "output": "ve:copper_ingot"
+  }
+  
+}

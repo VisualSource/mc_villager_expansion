@@ -1,0 +1,13 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "minecraft:small_outpost_feature"
+		},
+		"structure_name": "ve:samll_outpost",
+		"adjustment_radius": 10,
+		"constraints": {
+			"grounded": {}
+		}
+	}
+}

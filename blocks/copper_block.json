@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ve:copper_block",
+			"category": "Constuction",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:destroy_time": 1
+		},
+		"events": {}
+	}
+}

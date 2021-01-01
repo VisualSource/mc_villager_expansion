@@ -1,0 +1,26 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ve:rose_gold_crossbow",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:display_name": {
+				"value": "item.ve:rose_gold_crossbow.name"
+      },
+      "minecraft:icon": {
+        "texture": "rose_gold_crossbow_standby"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:repairable": {},
+      "minecraft:weapon": {},
+      "minecraft:durability":{
+        "damage_chance": 2,
+        "max_durability": 1000
+      }
+    }
+  }
+}

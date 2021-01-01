@@ -1,0 +1,268 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "ve:defender",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "become_zombie": {
+        "minecraft:transformation": {
+          "into": "ve:zombie_defender"
+        }
+      },
+      "minecraft:celebrate": {
+        "minecraft:behavior.celebrate": {
+          "priority": 5,
+          "celebration_sound": "celebrate",
+          "sound_interval": {
+            "range_min": 2.0,
+            "range_max": 7.0
+          },
+          "jump_interval": {
+            "range_min": 1.0,
+            "range_max": 3.5
+          },
+          "duration": 30.0,
+          "on_celebration_end_event": {
+            "event": "minecraft:stop_celebrating",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:ranged_attack": {
+        "minecraft:behavior.ranged_attack": {
+          "priority": 4,
+          "attack_interval_min": 1,
+          "attack_interval_max": 2,
+          "attack_radius": 15
+        },
+        "minecraft:shooter": {
+          "type": "Arrow",
+          "def": "minecraft:arrow"
+        },
+        "minecraft:environment_sensor": {
+          "triggers": {
+            "filters": {
+              "test": "is_underwater",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "event": "minecraft:melee_mode"
+          }
+        }
+      },
+      "minecraft:melee_attack": {
+        "minecraft:behavior.melee_attack": {
+          "priority": 4,
+          "target_dist": 1.2,
+          "speed_multiplier": 1,
+          "track_target": true
+        },
+        "minecraft:attack": {
+          "damage": 3
+        },
+        "minecraft:environment_sensor": {
+          "triggers": {
+            "filters": {
+              "test": "in_water",
+              "subject": "self",
+              "operator": "==",
+              "value": false
+            },
+            "event": "minecraft:ranged_mode"
+          }
+        }
+      },
+      "minecraft:village_created": {
+        "minecraft:behavior.defend_village_target": {
+          "priority": 1
+        },
+        "minecraft:dweller": {
+          "dwelling_type": "village",
+          "dweller_role": "defender",
+          "update_interval_base": 60,
+          "update_interval_variant": 40,
+          "can_find_poi": false,
+          "can_migrate": true,
+          "first_founding_reward": 0
+        }
+      }
+    },
+    "components":{
+      "minecraft:persistent": {},
+      "minecraft:on_hurt_by_player": {
+        "event": "minecraft:ranged_mode",
+        "target": "self"
+      },
+      "minecraft:on_target_escape": {
+        "event": "minecraft:calm",
+        "target": "self"
+      },
+      "minecraft:on_target_acquired": {
+        "event": "minecraft:ranged_mode",
+        "target": "self"
+      },
+      "minecraft:on_hurt": {
+        "event": "minecraft:ranged_mode",
+        "target": "self"
+      },
+      "minecraft:type_family": {
+        "family": [ "defender", "irongolem", "mob" ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:variant": {
+        "value": 0
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:health": {
+        "value": 24,
+        "max": 24
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/pillager.json"
+      },
+      "minecraft:movement": {
+        "value": 0.35
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:nameable": {},
+      "minecraft:equipment": {
+        "table": "loot_tables/entities/pillager_gear.json"
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 8
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 8
+      },
+      "minecraft:behavior.charge_held_item": {
+        "priority": 3,
+        "items": [
+          "minecraft:arrow"
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:follow_range": {
+        "value": 64
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "within_radius": 16.0,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": { 
+                "all_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
+                  { "test" :  "is_family", "subject" : "other", "operator": "!=", "value" :  "creeper"},
+                  { "test" :  "is_family", "subject" : "other", "operator": "!=", "value" :  "ve:herobrine"}
+                ] 
+            },
+            "max_dist": 16
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": {
+          "filters": { "test": "is_family", "subject": "other", "operator": "!=", "value": "creeper" },
+          "max_dist": 64
+        }
+      }
+    },
+    "events": {
+      "become_zombie": {
+        "sequence": [
+          {
+            "filters": {"test": "is_difficulty", "value": "normal"},
+            "randomize": [
+              {
+                "weight": 50,
+                "add": { "component_groups": [ "become_zombie" ] }
+              },
+              {
+                "weight": 50
+              }
+            ]
+          },
+          {
+            "filters": {"test": "is_difficulty", "value": "hard"},
+            "add": {
+              "component_groups": [
+                "become_zombie"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:from_village": {
+        "add": {
+          "component_groups": [
+            "minecraft:village_created"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "minecraft:ranged_attack"
+          ]
+        }
+      },
+      "minecraft:melee_mode": {
+        "remove": { "component_groups": [ "minecraft:ranged_attack" ] },
+        "add": { "component_groups": [ "minecraft:melee_attack" ] }
+      },
+      "minecraft:ranged_mode": {
+        "remove": { "component_groups": [ "minecraft:melee_attack" ] },
+        "add": { "component_groups": [ "minecraft:ranged_attack" ] }
+      },
+      "minecraft:start_celebrating": { 
+        "add": { "component_groups": [ "minecraft:celebrate" ] }
+      },
+      "minecraft:stop_celebrating": {
+        "remove": { "component_groups": [ "minecraft:celebrate" ] }
+      },
+      "minecraft:calm": {
+        "remove": { "component_groups": [ "minecraft:melee_attack", "minecraft:ranged_attack" ] }
+      }
+    }
+  }
+}

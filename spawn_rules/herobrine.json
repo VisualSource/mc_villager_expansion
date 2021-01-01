@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:spawn_rules": {
+        "description": {
+            "identifier": "ve:herobrine",
+            "population_control": "monster"
+        },
+        "conditions": [
+            {
+                "minecraft:spawns_on_surface": {},
+                "minecraft:spawns_underground": {},
+                "minecraft:difficulty_filter": {
+                    "min": "easy",
+                    "max": "hard"
+                },
+                "minecraft:weight": {
+                    "default": 100
+                },
+                "minecraft:herd": {
+                    "min_size": 1,
+                    "max_size": 1
+                },
+                "minecraft:density_limit": {
+                    "surface": 1
+                }
+            }
+        ]
+    }
+}

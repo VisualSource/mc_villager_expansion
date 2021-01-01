@@ -2,8 +2,7 @@
     "format_version": "1.10.0",
     "minecraft:attachable": {
       "description": {
-        "identifier": "ve:rose_gold_boots.player",
-        "item": { "ve:rose_gold_boots": "query.owner_identifier == 'minecraft:player'" },
+        "identifier": "ve:rose_gold_boots",
         "materials": {
           "default": "armor",
           "enchanted": "armor_enchanted"
@@ -13,7 +12,7 @@
           "enchanted": "textures/misc/enchanted_item_glint"
         },
         "geometry": {
-          "default": "geometry.player.armor.boots"
+          "default": "geometry.humanoid.armor.boots"
         },
         "scripts": {
           "parent_setup": "variable.boot_layer_visible = 0.0;"

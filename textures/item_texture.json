@@ -1,6 +1,12 @@
 {
     "resource_pack_name" : "ve",
     "texture_data" : {
+        "corn_seeds":{
+            "textures": "textures/items/corn_seed_item"
+        },
+        "corn_item":{
+            "textures": "textures/items/corn_item"
+        },
         "rose_gold_ingot":{
             "textures": "textures/items/rose_gold_ingot"
         },

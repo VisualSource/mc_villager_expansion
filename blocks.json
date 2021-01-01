@@ -4,8 +4,12 @@
 		"textures": "copper_ore"
     },
     "ve:copper_fire":{
-        "sound": "fire",
-		"textures": "copper_fire_0"
+        "textures": {
+            "up": "copper_fire_0",
+            "down": "copper_fire_1",
+            "side": "copper_fire_0"
+          },
+          "sound": "wood"
     },
     "ve:copper_block":{
         "sound": "metal",

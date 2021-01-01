@@ -1,0 +1,17 @@
+{
+    "resource_pack_name": "vanilla",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+        "copper_ore":{
+            "textures": "textures/blocks/copper_ore"
+        },
+        "copper_fire":{
+            "textures": "textures/blocks/copper_fire"
+        },
+        "copper_block":{
+            "textures": "textures/blocks/copper_block"
+        }
+    }
+}

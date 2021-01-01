@@ -1,0 +1,14 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ve:copper_hoe",
+      "category": "equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "copper_hoe",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+item.ve:copper_sword.name=Copper Sword
+item.ve:copper_axe.name=Copper Axe 
+item.ve:copper_hoe.name=Copper Hoe 
+item.ve:copper_pickaxe.name=Copper Pickaxe 
+item.ve:copper_shovel.name=Copper Shovel 
+item.ve:rose_gold_sword.name=Rose Gold Sword
+item.ve:rose_gold_axe.name=Rose Gold Axe 
+item.ve:rose_gold_hoe.name=Rose Gold Hoe 
+item.ve:rose_gold_pickaxe.name=Rose Gold Pickaxe 
+item.ve:rose_gold_shovel.name=Rose Gold Shovel 
+item.ve:rose_gold_bow.name=Rose gold bow
+item.ve:rose_gold_crossbow.name=Rose gold Crossbow 
+item.ve:rose_gold_leggings.name=Rose gold Leggings
+item.ve:rose_gold_chestplate.name=Rose gold Chestplate 
+item.ve:rose_gold_ingot.name=Rose Gold Ingot
+item.ve:copper_ingot.name=Copper Ingot
+item.ve:rose_gold_boots.name=Rose Gold Boots 
+item.ve:rose_gold_helmet.name=Rose Gold Helment
+
+entity.ve:herobrine.name=Herobrine
+entity.ve:defender.name=Defender
+entity.ve:ranger.name=Ranger
+entity.ve:zombie_defender.name=Zombie Defender
+entity.ve:zombie_ranger.name=Zombie Ranger
+
+item.spawn_egg.entity.ve:defender.name=Spawn Defender
+item.spawn_egg.entity.ve:zombie_defender.name=Spawn Zombie Defender
+item.spawn_egg.entity.ve:zombie_ranger.name=Spawn Zombie Ranger
+item.spawn_egg.entity.ve:ranger.name=Spawn Ranger
+
+tile.ve:copper_fire.name=Copper fire 
+tile.ve:copper_block.name=Copper Block
+tile.ve:copper_ore.name=Copper Ore

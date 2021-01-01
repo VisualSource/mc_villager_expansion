@@ -1,0 +1,14 @@
+{
+    "ve:copper_ore":{
+        "sound": "stone",
+		"textures": "copper_ore"
+    },
+    "ve:copper_fire":{
+        "sound": "fire",
+		"textures": "copper_fire_0"
+    },
+    "ve:copper_block":{
+        "sound": "metal",
+		"textures": "copper_block"
+    }
+}

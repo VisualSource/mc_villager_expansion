@@ -1,0 +1,14 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ve:copper_pickaxe",
+      "category": "equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "copper_pickaxe",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

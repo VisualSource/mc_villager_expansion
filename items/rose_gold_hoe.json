@@ -1,0 +1,14 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "ve:rose_gold_hoe",
+      "category": "Equipment"
+    },
+
+    "components": {
+      "minecraft:icon": "rose_gold_hoe",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

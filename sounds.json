@@ -1,0 +1,58 @@
+{
+    "entity_sounds": {
+        "entities": {
+            "ve:ranger":{
+                "volume": 1.0,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "ambient": "mob.villager.idle",
+                    "hurt": "mob.villager.hit",
+                    "death": "mob.villager.death",
+                    "death.to.zombie": "mob.villager.death",
+                    "ambient.in.raid": {"sound": "mob.villager.idle", "volume": 3.0, "pitch": [ 0.8, 1.2 ]},
+                    "celebrate": "mob.pillager.celebrate"
+                }
+            },
+            "ve:defender":{
+                "volume": 1.0,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                    "ambient": "mob.villager.idle",
+                    "hurt": "mob.villager.hit",
+                    "death": "mob.villager.death",
+                    "death.to.zombie": "mob.villager.death",
+                    "ambient.in.raid": {"sound": "mob.villager.idle", "volume": 3.0, "pitch": [ 0.8, 1.2 ]},
+                    "celebrate": "mob.pillager.celebrate"
+                }
+            },
+            "ve:zombie_ranger":{
+                "volume": 1.0,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                  "ambient": "mob.zombie_villager.say",
+                  "hurt": "mob.zombie_villager.hurt",
+                  "death": "mob.zombie_villager.death",
+                  "step": {
+                    "sound": "mob.zombie.step",
+                    "volume": 0.45,
+                    "pitch": 1.0
+                  }
+                }
+            },
+            "ve:zombie_defender":{
+                "volume": 1.0,
+                "pitch": [ 0.8, 1.2 ],
+                "events": {
+                  "ambient": "mob.zombie_villager.say",
+                  "hurt": "mob.zombie_villager.hurt",
+                  "death": "mob.zombie_villager.death",
+                  "step": {
+                    "sound": "mob.zombie.step",
+                    "volume": 0.45,
+                    "pitch": 1.0
+                  }
+                }
+            }
+        }
+    }
+}

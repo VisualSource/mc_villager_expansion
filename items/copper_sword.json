@@ -20,7 +20,6 @@
       "minecraft:hand_equipped": true,
       "minecraft:weapon": {},
       "tag:minecraft:is_sword": {},
-      "minecraft:use_duration": 625,
       "minecraft:durability":{
         "damage_chance": 2,
         "max_durability": 625

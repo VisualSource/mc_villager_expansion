@@ -4,7 +4,7 @@
         "description": "Behavior pack for Village Expantion Pack",
         "name": "Village Expantion BP",
         "uuid": "eabd9a75-771c-4378-892f-c36f192f1396",
-        "version": [ 0, 0, 7],
+        "version": [ 0, 0, 8],
         "min_engine_version": [ 1, 16, 0 ]
     },
     "modules": [
@@ -12,7 +12,7 @@
             "description": "Behavior pack for Village Expantion Pack",
             "type": "data",
             "uuid": "2bef6c64-6b0c-473a-8ff6-42f0d20d85de",
-            "version": [0, 0, 7]
+            "version": [0, 0, 8]
         }
     ],
     "dependencies": [

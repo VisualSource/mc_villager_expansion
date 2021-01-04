@@ -6,6 +6,10 @@
 			"category": "equipment"
         },
         "components": {
+            "minecraft:durability":{
+               "damage_chance": 2,
+               "max_durability": 625
+            },
             "minecraft:armor": {
 				"protection": 5
             },

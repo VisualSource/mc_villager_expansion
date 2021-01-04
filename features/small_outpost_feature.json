@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "minecraft:small_outpost_feature"
 		},
-		"structure_name": "ve:small_outpost",
+		"structure_name": "mystrucure:small_outpost",
 		"adjustment_radius": 10,
 		"constraints": {
 			"grounded": {}

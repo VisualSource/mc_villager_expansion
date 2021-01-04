@@ -2,7 +2,7 @@
     "format_version": "1.12",
     "minecraft:recipe_shaped": {
       "description": {
-      "identifier": "ve:copper_hoe"
+      "identifier": "ve:rose_gold_hoe"
       },
       "tags": [ "crafting_table" ],
       "pattern": [
@@ -12,14 +12,14 @@
       ],
       "key": {
         "X": {
-          "item": "ve:copper_ingot"
+          "item": "ve:rose_gold_ingot"
         },
         "S":{
           "item": "minecraft:stick"
         }
       },
       "result": {
-        "item": "ve:copper_hoe"
+        "item": "ve:rose_gold_hoe"
       }
     }
   }

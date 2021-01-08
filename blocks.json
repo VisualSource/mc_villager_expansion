@@ -21,6 +21,10 @@
         "sound": "stone",
 		"textures": "copper_ore"
     },
+    "ve:ruby_ore":{
+        "sound": "stone",
+		"textures": "ruby_ore"
+    },
     "ve:copper_fire":{
         "textures": {
             "up": "copper_fire_0",

@@ -1,6 +1,9 @@
 {
     "resource_pack_name" : "ve",
     "texture_data" : {
+        "ruby":{
+            "textures": "textures/items/ruby"
+        },
         "corn_seeds":{
             "textures": "textures/items/corn_seed_item"
         },

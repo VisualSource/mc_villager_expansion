@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ve:ruby_ore",
+			"category": "Nature",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:destroy_time": 0.8,
+			"minecraft:explosion_resistance": 6,
+			"minecraft:map_color": "#666666",
+			"minecraft:loot": "loot_tables/blocks/ruby_ore.json",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ruby_ore",
+					"render_method": "opaque"
+				}
+			}
+		},
+		"events": {}
+	}
+}

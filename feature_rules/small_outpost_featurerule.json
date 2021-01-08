@@ -12,12 +12,28 @@
 						{
 							"test": "has_biome_tag",
 							"operator": "==",
+							"value": "swamp"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "forest"
+						},
+						{
+							"test": "has_biome_tag",
+							"operator": "==",
 							"value": "plains"
+						},
+
+						{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "mutated"
 						}
 					]
 				}
 			],
-			"placement_pass": "underground_pass"
+			"placement_pass": "surface_pass"
 		},
 		"distribution": {
 			"iterations": 1,
@@ -38,10 +54,7 @@
 			},
 			"z": {
 				"distribution": "uniform",
-				"extent": [
-					0,
-					16
-				]
+				"extent": [ 0, "query.heightmap(variable.worldx, variable.worldz) + 32" ]
 			},
 			"scatter_chance": {
 				"numerator": 1,

@@ -1,0 +1,15 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ve:wild_corn_stock",
+			"category": "Nature",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:entity_collision": false,
+			"minecraft:destroy_time": 0.2
+		},
+		"events": {}
+	}
+}

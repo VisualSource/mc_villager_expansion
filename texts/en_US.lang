@@ -16,7 +16,8 @@ item.ve:rose_gold_ingot.name=Rose Gold Ingot
 item.ve:copper_ingot.name=Copper Ingot
 item.ve:rose_gold_boots.name=Rose Gold Boots 
 item.ve:rose_gold_helmet.name=Rose Gold Helment
-
+item.ve:corn_item.name=Corn
+item.ve:corn_seeds.name=Corn Seeds
 entity.ve:herobrine.name=Herobrine
 entity.ve:defender.name=Defender
 entity.ve:ranger.name=Ranger

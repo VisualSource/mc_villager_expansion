@@ -1,4 +1,22 @@
 {
+    "ve:wild_corn_stock" : {
+        "carried_textures" : "double_plant_carried",
+        "sound" : "grass",
+        "textures" : {
+           "down" : "double_plant_bottom",
+           "side" : "sunflower_additional",
+           "up" : "double_plant_top"
+        }
+    },
+    "ve:corn_stock" : {
+        "carried_textures" : "double_plant_carried",
+        "sound" : "grass",
+        "textures" : {
+           "down" : "double_plant_bottom",
+           "side" : "sunflower_additional",
+           "up" : "double_plant_top"
+        }
+    },
     "ve:copper_ore":{
         "sound": "stone",
 		"textures": "copper_ore"

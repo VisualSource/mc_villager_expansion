@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "description": {
+          "identifier": "ve:corn_seeds",
+          "category": "Nature"
+        },
+        "components": {
+            "minecraft:display_name": {
+				"value": "item.ve:corn_seeds.name"
+            },
+            "minecraft:creative_category": {
+				"parent": "itemGroup.name.seeds"
+            },
+            "minecraft:icon": "corn_seeds"
+        }
+    }
+}

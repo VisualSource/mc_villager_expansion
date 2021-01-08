@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+      "description": {
+        "identifier": "ve:corn_item",
+        "category": "Nature"
+      },
+  
+      "components": {
+        "minecraft:icon": "corn_item",
+        "minecraft:creative_category": {
+            "parent": "itemGroup.name.crops"
+        },
+        "minecraft:use_animation": "eat",
+        "minecraft:render_offsets": "apple",
+        "minecraft:display_name": {
+            "value": "item.ve:corn_item.name"
+        }
+      }
+    }
+  }

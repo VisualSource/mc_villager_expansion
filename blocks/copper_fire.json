@@ -9,7 +9,7 @@
 			"minecraft:block_light_emission": 1,
 			"minecraft:entity_collision": false,
 			"minecraft:destroy_time": 0,
-			"minecraft:geometry": "geometry.fire",
+			"minecraft:geometry": "geometry.block.fire",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "copper_fire",

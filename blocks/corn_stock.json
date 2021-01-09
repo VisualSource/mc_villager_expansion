@@ -7,6 +7,7 @@
 			"register_to_creative_menu": true
 		},
 		"components": {
+			"minecraft:geometry": "geometry.double_plant",
 			"minecraft:entity_collision": false,
 			"minecraft:destroy_time": 0.2
 		},

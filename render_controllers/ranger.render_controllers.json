@@ -7,7 +7,7 @@
         { "rightArm": "query.is_angry || query.is_celebrating" },
         { "leftArm": "query.is_angry || query.is_celebrating" },
         { "rightItem": "query.is_angry" },
-        { "arms": "!(query.is_angry || query.is_celebrating)" }
+        { "arms": "!(q.is_angry || q.is_celebrating)" }
       ],
       "materials": [ { "*": "Material.default" } ],
       "textures": [ "Texture.default" ]
